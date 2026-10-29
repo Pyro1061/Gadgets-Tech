@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Gadgets Tech — catálogo de gadgets para uma vida mais conectada." />
+    <title>Gadgets Tech — Gadgets que acompanham você</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <meta property="og:image" content="https://bolt.new/static/og_default.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bolt.new/static/og_default.png">
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <div class="container nav-wrap">
+        <a class="brand" href="#inicio" aria-label="Gadgets Tech início">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>Gadgets Tech</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">
+          <span></span><span></span><span></span>
+          <span class="sr-only">Abrir menu</span>
+        </button>
+
+        <nav class="main-nav" id="main-navigation" aria-label="Navegação principal">
+          <a class="active" href="#inicio">Início</a>
+          <a href="#catalogo">Catálogo</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#contato">Contato</a>
+        </nav>
+
+        <a class="cart-button" href="#carrinho" aria-label="Carrinho com 0 itens">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 1.9-1.4L20.5 8H6.2M9 20h.01M17 20h.01" /></svg>
+          <span>Carrinho</span><strong id="cart-count">0</strong>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+        <div class="container hero-content">
+          <div class="hero-copy">
+            <p class="eyebrow"><span></span> Tecnologia para o próximo passo</p>
+            <h1>Seu mundo,<br /><em>mais inteligente.</em></h1>
+            <p class="hero-description">Descubra gadgets pensados para simplificar sua rotina, conectar suas ideias e acompanhar o seu ritmo.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#catalogo">Explorar catálogo <span>↗</span></a>
+              <a class="text-link" href="#sobre">Conheça a Gadgets Tech <span>→</span></a>
+            </div>
+            <div class="hero-proof"><span class="proof-dot"></span><span>Curadoria de tecnologia essencial</span></div>
+          </div>
+          <div class="hero-visual" aria-label="Imagem de óculos inteligentes">
+            <div class="visual-label label-top">01 <span>/</span> WEARABLES</div>
+            <img src="https://images.pexels.com/photos/40180238/pexels-photo-40180238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Óculos inteligentes pretos com câmera integrada" />
+            <div class="visual-caption"><strong>VisorAR Glass</strong><span>Realidade aumentada para todos os dias</span></div>
+            <div class="visual-number">01</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="category-strip" aria-label="Categorias">
+        <div class="container category-list">
+          <a href="#catalogo"><span>01</span> Wearables <b>↗</b></a>
+          <a href="#catalogo"><span>02</span> Casa inteligente <b>↗</b></a>
+          <a href="#catalogo"><span>03</span> Áudio avançado <b>↗</b></a>
+          <p>Grupo C <span>•</span> Atividade prática 4º bimestre</p>
+        </div>
+      </section>
+
+      <section class="catalog-section" id="catalogo">
+        <div class="container">
+          <div class="section-heading">
+            <div><p class="eyebrow">Seleção em destaque</p><h2>O futuro cabe<br /><em>na sua rotina.</em></h2></div>
+            <p class="section-intro">Produtos escolhidos para tornar cada interação mais simples, rápida e surpreendente.</p>
+          </div>
+
+          <div class="catalog-grid">
+            <article class="product-card card-wide">
+              <div class="product-image"><img src="https://images.pexels.com/photos/40180238/pexels-photo-40180238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Óculos inteligentes VisionAR Glass" /><span class="product-tag">Mais desejado</span><button class="card-arrow" type="button" aria-label="Ver detalhes do VisionAR Glass">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Wearables</p><h3>VisionAR Glass</h3></div><span class="product-index">01</span><p class="product-description">Exibição de GPS e tradução de idiomas em tempo real nas lentes.</p></div>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="https://images.pexels.com/photos/33298190/pexels-photo-33298190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Fones PulseTouch Pro" /><button class="card-arrow" type="button" aria-label="Ver detalhes do PulseTouch Pro">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Wearables</p><h3>PulseTouch Pro</h3></div><span class="product-index">02</span><p class="product-description">Feedback tátil e vibrações direcionais para games.</p></div>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="https://images.pexels.com/photos/33080094/pexels-photo-33080094.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Anel inteligente AuraRing Control" /><button class="card-arrow" type="button" aria-label="Ver detalhes do AuraRing Control">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Wearables</p><h3>AuraRing Control</h3></div><span class="product-index">03</span><p class="product-description">Controle por gestos no ar em um design discreto.</p></div>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="https://images.pexels.com/photos/16423104/pexels-photo-16423104.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Painel de casa inteligente HomeDesk AI" /><button class="card-arrow" type="button" aria-label="Ver detalhes do HomeDesk AI">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Casa inteligente</p><h3>HomeDesk AI</h3></div><span class="product-index">04</span><p class="product-description">Assistente de mesa com projeção holográfica 3D interativa.</p></div>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="https://images.pexels.com/photos/4790256/pexels-photo-4790256.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Garrafa inteligente HydroSmart" /><button class="card-arrow" type="button" aria-label="Ver detalhes do HydroSmart">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Casa inteligente</p><h3>HydroSmart</h3></div><span class="product-index">05</span><p class="product-description">Garrafa com esterilização UV-C e lembrete de hidratação.</p></div>
+            </article>
+            <article class="product-card">
+              <div class="product-image"><img src="https://images.pexels.com/photos/33298190/pexels-photo-33298190.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Fones Orbital Sound" /><button class="card-arrow" type="button" aria-label="Ver detalhes do Orbital Sound">↗</button></div>
+              <div class="product-info"><div><p class="product-category">Áudio avançado</p><h3>Orbital Sound</h3></div><span class="product-index">06</span><p class="product-description">Som fluido com levitação magnética e indução.</p></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="sobre">
+        <div class="container about-inner"><p class="eyebrow">Por que Gadgets Tech</p><h2>Menos ruído.<br /><em>Mais possibilidade.</em></h2><p>Uma curadoria de objetos que unem design, inteligência e propósito para transformar o jeito como você vive a tecnologia.</p><a class="button button-dark" href="#contato">Fale com a gente <span>↗</span></a></div>
+      </section>
+    </main>
+
+    <footer id="contato"><div class="container footer-main"><a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>Gadgets Tech</span></a><div><p class="footer-label">Projeto acadêmico</p><p>Grupo C · Desenvolvimento Web</p></div><div><p class="footer-label">Integrantes</p><p>Bruno Aref Adas<br />Diogo Borges da Costa<br />Guilherme Fernandes Cruz<br />Pedro Henrique Alves Martins</p></div></div><div class="container footer-bottom"><span>© 2026 Gadgets Tech</span><span>Atividade Prática · 4º Bimestre</span></div></footer>
+  </body>
+</html>
